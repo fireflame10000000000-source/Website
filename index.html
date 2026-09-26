@@ -326,7 +326,7 @@
         // CONFIGURATION
         // ==========================================
         const DEFAULT_VOLUME = 0.15;          // Change volume here (0.0 to 1.0)
-        const songUrl = 'song.mp3';           // Change to a direct .mp3 URL if you want
+        const songUrl = 'https://github.com/fireflame10000000000-source/Website/blob/main/song.mp3';           // Change to a direct .mp3 URL if you want
         // ==========================================
 
         const textArray = ["stripes.lol"];
@@ -536,3 +536,32 @@
                         errorMsg.style.display = 'block';
                     } else {
                         localStorage.setItem('stripes_visited', 'true');
+                        modal.style.display = 'none';
+                        container.style.display = 'flex';
+                    }
+                });
+            } else {
+                modal.style.display = 'none';
+                container.style.display = 'flex';
+            }
+        }
+
+        const overlay = document.getElementById('overlay-screen');
+        const siteContent = document.getElementById('site-content');
+        const enterStatus = document.getElementById('enter-status');
+
+        overlay.addEventListener('click', () => {
+            enterStatus.textContent = "LOADING...";
+            overlay.classList.add('hidden');
+            siteContent.classList.add('active');
+
+            setupAndPlayAudio();
+            checkLayoutLock();
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(type, 500);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frida Tools</title>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #00ff41;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 50px 20px;
+            box-sizing: border-box;
+        }
+        .title {
+            font-size: 2.4rem;
+            font-weight: bold;
+            text-shadow: 0 0 15px rgba(0, 255, 65, 0.7);
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+        .card {
+            background: #0c0c0c;
+            border: 1px solid #00ff41;
+            border-radius: 8px;
+            padding: 18px 22px;
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 16px;
+            box-shadow: 0 0 12px rgba(0, 255, 65, 0.15);
+        }
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+        .card-desc {
+            color: #00cc33;
+            font-size: 0.95rem;
+        }
+        .home-btn {
+            margin-top: 40px;
+            background: #00ff41;
+            color: #000;
+            border: none;
+            padding: 12px 28px;
+            font-weight: bold;
+            border-radius: 6px;
+            text-decoration: none;
+            font-family: 'Courier New', monospace;
+            transition: 0.2s;
+        }
+        .home-btn:hover {
+            background: #39ff14;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="title">FRIDA TOOLS</div>
+
+    <div class="card">
+        <div class="card-title">Python</div>
+        <div class="card-desc">Install Python first (needed for Frida)</div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">Command</div>
+        <div class="card-desc">pip install frida-tools</div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">Frida Server</div>
+        <div class="card-desc">Download matching version for your device</div>
+    </div>
+
+    <a href="index.html" class="home-btn">← HOME</a>
+</body>
+</html>

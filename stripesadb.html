@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StripesADB</title>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #00ff41;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 50px 20px;
+        }
+        .title {
+            font-size: 2.4rem;
+            font-weight: bold;
+            text-shadow: 0 0 15px rgba(0, 255, 65, 0.7);
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+        .card {
+            background: #0c0c0c;
+            border: 1px solid #00ff41;
+            border-radius: 8px;
+            padding: 18px 22px;
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 16px;
+            text-decoration: none;
+            color: #00ff41;
+            transition: 0.2s;
+            box-shadow: 0 0 12px rgba(0, 255, 65, 0.15);
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 22px rgba(0, 255, 65, 0.35);
+            border-color: #39ff14;
+        }
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+        .card-desc {
+            color: #00cc33;
+            font-size: 0.95rem;
+        }
+        .home-btn {
+            margin-top: 40px;
+            background: #00ff41;
+            color: #000;
+            border: none;
+            padding: 12px 28px;
+            font-weight: bold;
+            border-radius: 6px;
+            text-decoration: none;
+            font-family: 'Courier New', monospace;
+        }
+        .home-btn:hover {
+            background: #39ff14;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">STRIPES ADB</div>
 
+    <a href="#" class="card">
+        <div class="card-title">StripesADB.apk</div>
+        <div class="card-desc">Main ADB tool download</div>
+    </a>
+
+    <a href="#" class="card">
+        <div class="card-title">Platform Tools</div>
+        <div class="card-desc">Official Android platform-tools</div>
+    </a>
+
+    <a href="#" class="card">
+        <div class="card-title">Drivers</div>
+        <div class="card-desc">USB drivers for Quest / Android</div>
+    </a>
+
+    <a href="index.html" class="home-btn">← HOME</a>
+</body>
+</html>
